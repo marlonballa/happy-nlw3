@@ -1,0 +1,59 @@
+
+#page-landing {
+    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+    min-height: 100vh;
+    text-align: center;
+    /* o display flex trata de regras dentro da caixa */
+    display: flex;
+}
+
+#container {
+    /* o margin: auto só funciona se o elemento pai possuir um display: flex */
+    margin: auto;
+    width: 90%;
+}
+
+.location, h1, .visit p {
+    height: 16vh;
+}
+
+.visit a {
+    width: 5rem;
+    height:5rem;
+    background-color: #ffd666;
+    border: none;
+    border-radius: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+
+    transition: background 200ms;
+}
+
+.visit a:hover {
+    background-color: #96feff;
+}
+
+/* animações */
+#logo {
+    animation-delay: 50ms;
+}
+
+#location {
+        animation-delay: 100ms ;
+}
+
+main h1 {
+    animation-delay: 150ms;
+}
+
+.visit p {
+    animation-delay: 200ms;
+}
+
+.visit a {
+    animation-delay: 250ms;
+}

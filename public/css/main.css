@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 100%;
+}
+
+body {
+    /* Todo body, no chrome, tem por padrão um display block e um margin de 8px */
+    height: 100vh;
+    color: white;
+}
+
+body, input, button, textarea {
+    font-size: 1.125rem;
+    line-height: 1;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+
+    /*font: 400 1.125rem/1 'Nunito, sans-serif'; -> shorthand*/
+}
+
+
+
+
+
+
