@@ -10,7 +10,7 @@
 #container {
     /* o margin: auto só funciona se o elemento pai possuir um display: flex */
     margin: auto;
-    width: 90%;
+    width: min(90%, 70rem);
 }
 
 .location, h1, .visit p {
@@ -31,6 +31,7 @@
     margin: 0 auto;
 
     transition: background 200ms;
+    animation-delay: 250ms;
 }
 
 .visit a:hover {
@@ -48,12 +49,37 @@
 
 main h1 {
     animation-delay: 150ms;
+    font-size: clamp(2.5rem, 8vw, 4rem);
 }
 
 .visit p {
     animation-delay: 200ms;
 }
 
-.visit a {
-    animation-delay: 250ms;
+/* DESKTOP VERSION */
+
+@media(min-width: 47.5rem) {
+    /*Quando a largura for maior do que 760px, serão aplicadas as configurações abaixo*/
+
+    header {
+        display: flex;
+        
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .location, h1, .visit p {
+        height: initial;
+        text-align: initial;
+    }
+
+    .location {
+        text-align: right;
+    }
+
+    main h1 {
+        font-weight: bold;
+        width: min(25rem, 80%);
+        margin: clamp(10%, 10vh, 12%) 0 2.5rem;
+    }
 }
