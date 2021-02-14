@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="./public/css/page-orphanages.css" />
     <link rel="stylesheet" href="./public/css/animations.css" />
     <link rel="icon" href="./public/images/logo-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
     <title>Localize um orfanato | Happy</title>
   </head>
   <body>
@@ -19,14 +30,23 @@
         </header>
 
         <footer>
-            <strong>Santa Adélia</strong>
-            <p>São Paulo</p>
+          <strong>Santa Adélia</strong>
+          <p>São Paulo</p>
         </footer>
       </aside>
       <div id="mapid"></div>
-      <a href="create-orphanages.html" class="create-orphanages animate-right" title="Cadastre um Orfanato">
-          <img src="./public/images/plus.svg" alt="Botão para a inserção de novos orfanatos">
+      <a
+        href="create-orphanages.html"
+        class="create-orphanages animate-right"
+        title="Cadastre um Orfanato"
+      >
+        <img
+          src="./public/images/plus.svg"
+          alt="Botão para a inserção de novos orfanatos"
+        />
       </a>
     </div>
+    <script src="./public/scripts/page-orphanages.js">
+    </script>
   </body>
 </html>
