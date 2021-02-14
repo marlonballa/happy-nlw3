@@ -49,7 +49,7 @@
 
 main h1 {
     animation-delay: 150ms;
-    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-size: clamp(2.4rem, 8vw, 4rem);
 }
 
 .visit p {
@@ -58,9 +58,19 @@ main h1 {
 
 /* DESKTOP VERSION */
 
-@media(min-width: 47.5rem) {
+@media(min-width: 48rem) {
     /*Quando a largura for maior do que 760px, serão aplicadas as configurações abaixo*/
 
+    #container {
+        /*shothand background - image, repeat, position, size */
+        /*o position trabalhar em y, quando usamos bottom ou top 
+          E trabalha o eixo x, quando usamos o right ou o left. */
+        background-image: url("../images/bg.svg");
+        background-repeat: no-repeat;
+        background-position: 80%;
+        background-size: clamp(18.75rem, 54vw, 35rem);
+        padding: 3.5rem 1.25rem;
+    }
     header {
         display: flex;
         
@@ -75,11 +85,29 @@ main h1 {
 
     .location {
         text-align: right;
+        font-size: 1.5rem;
+        line-height: 1.5;
     }
 
     main h1 {
         font-weight: bold;
         width: min(25rem, 80%);
         margin: clamp(10%, 10vh, 12%) 0 2.5rem;
+    }
+
+    .visit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .visit p {
+        line-height: 1.5;
+        font-size: 1.5rem;
+        width: clamp(20rem, 25vw, 25rem);
+    }
+
+    .visit a {
+        margin: initial;
     }
 }
